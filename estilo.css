@@ -1,46 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+  }
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-   width: 100%;
-   height: 100%;
+   min-width: 100%;
+   min-height: 100%;
  
 }
 
-
-
-
 main{
+    font-family: 'Open Sans';
+
     border: 2px red solid;
-    background: linear-gradient(to bottom, blue 0, blue 40%, yellow 20%);
+    background: linear-gradient(to bottom, #1d539e 0, #1d539e 50%, #f9fbfc 20%);
     padding: 5% 3% 0%;
+}
+p{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 
 
 .text{
+    padding-top: 100px;
     text-align: center;
+    color: #ffffff;
+
+
+}
+.text h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
     
 }
+
+
+
 .flex{
    
     display: flex;
     flex-wrap: wrap;
     padding: 47px 6px;
-    /* display: flex; */
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
 .card{
-    width: 355px;
-    height: 470px;
+    max-width: 355px;
+    min-height: 470px;
+    margin: 1vh 0;
+    padding: 30px;
     
-    background-color: aliceblue;
+
+    background-color: #ffffff;
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    border-radius: 8px;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+
+    color: #1E2338;
 
 }
+.card h2{
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+
+    color: #1E2338;
+
+    
+}
+
+/*aquiiiii*/
+
+.card .price{
+    margin-top: 20px;
+    
+}
+
+.card .price span{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 49px;
+    /* identical to box height */
+
+
+    color: #1E2338;
+
+}
+.card .price .span-low{
+    font-size: 25px;
+    
+}
+
+
+.card ul li{
+    list-style: none;
+}
+
+
+
 #card-free{
     background-color: olive;
 }
