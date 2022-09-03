@@ -28,6 +28,7 @@ p{
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+    margin: 0px 0px;
 }
 
 
@@ -59,11 +60,14 @@ p{
 
 
 .card{
+    gap: 0.5vh;
+    padding: 13px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     max-width: 355px;
     min-height: 470px;
-    margin: 1vh 0;
-    padding: 30px;
-    
+
 
     background-color: #ffffff;
     box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
@@ -91,11 +95,9 @@ p{
     
 }
 
-/*aquiiiii*/
 
 .card .price{
-    margin-top: 20px;
-    
+    margin: 0px 0;
 }
 
 .card .price span{
@@ -112,21 +114,89 @@ p{
     font-size: 25px;
     
 }
-
+/*
+.card ul{
+    margin: 40px 0;
+}
+*/
 
 .card ul li{
     list-style: none;
+    padding: 10px 0;
+
 }
 
+.card ul li img{
+    padding-right: 10px; 
+
+}
+
+.card button{
+
+    margin-top: 82px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 120px;
+    gap: 10px;
+
+    border: 1px solid #1D539E;
+    border-radius: 10px;
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+button a{
+    padding: 2px 30px;
+    font-style: none;
+}
 
 
 #card-free{
     background-color: olive;
 }
+
 #card-basico{
-    background-color: orange;
+    background: linear-gradient(to bottom, #ffcc29 0, #ffcc29 13%, #ffffff 11%);
 
 }
+
+#card-basico .header-basico{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#card-basico .header-basico span{
+    background-color: #1D539E;
+    border-radius: 40px;
+    color: #ffffff;
+
+    padding: 7px 30px;
+    margin-bottom: 15px;
+
+
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+
+
+}
+
+#card-basico button{
+    background-color: #1D539E;
+    color: #ffffff;
+}
+
 #card-profissional{
     background-color: slategray;
 }
