@@ -5,7 +5,16 @@
     --blue: #1d539e;
     --gray: #828799;
     --page-background: #f9fbfc;
+    --cor-text-claro:  #ffffffff;
+    --cor-text-escro:  #828799;
+    --cor-text-preto: #1E2338;
+    --cor-bg-superior: #1d539e;
+    --cor-bg-inferior: #F9FBFC;
+    --bg-card: #ffffff;
+
   }
+
+
 *{
     margin: 0;
     padding: 0;
@@ -19,12 +28,27 @@ body{
 
 main{
     font-family: 'Open Sans';
+    color: var(--cor-text-claro);
 
-    border: 2px red solid;
-    background: linear-gradient(to bottom, #1d539e 0, #1d539e 50%, #f9fbfc 20%);
+    background: linear-gradient(to bottom, var(--cor-bg-superior) 0, var(--cor-bg-superior) 50%, var(--cor-bg-inferior) 20%);
     padding: 5% 3% 0%;
 }
-p{
+
+
+/*texto de descrrição*/
+.text{
+    padding-top: 100px;
+    text-align: center;
+
+}
+.text h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 65px;
+    
+}
+.text p{
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
@@ -33,23 +57,7 @@ p{
 
 
 
-.text{
-    padding-top: 100px;
-    text-align: center;
-    color: #ffffff;
-
-
-}
-.text h1{
-    font-style: normal;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 65px;
-    
-}
-
-
-
+/*container flex*/
 .flex{
    
     display: flex;
@@ -59,7 +67,10 @@ p{
 }
 
 
+
+/*configuraçoẽs dos cartoẽs*/
 .card{
+    margin: 5px;
     gap: 0.5vh;
     padding: 13px;
     display: flex;
@@ -68,57 +79,36 @@ p{
     max-width: 355px;
     min-height: 470px;
 
-
-    background-color: #ffffff;
-    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    background-color: var(--bg-card);
+    box-shadow: 3px 3px 3px rgba(142, 150, 185, 50%);
     border-radius: 8px;
 
-    font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    /* identical to box height */
 
-
-    color: #1E2338;
-
+    color: var(--cor-text-escro);
 }
 .card h2{
-
     font-weight: 600;
     font-size: 18px;
     line-height: 25px;
-    /* identical to box height */
 
+    color: var(--cor-text-preto);
 
-    color: #1E2338;
-
-    
-}
-
-
-.card .price{
-    margin: 0px 0;
 }
 
 .card .price span{
     font-weight: 700;
     font-size: 36px;
     line-height: 49px;
-    /* identical to box height */
 
-
-    color: #1E2338;
+    color: var(--cor-text-preto);
 
 }
 .card .price .span-low{
     font-size: 25px;
     
 }
-/*
-.card ul{
-    margin: 40px 0;
-}
-*/
 
 .card ul li{
     list-style: none;
@@ -141,7 +131,8 @@ p{
     padding: 15px 120px;
     gap: 10px;
 
-    border: 1px solid #1D539E;
+    border: 1px solid var(--blue);
+    background-color: var(--bg-card);
     border-radius: 10px;
 
 
@@ -154,17 +145,26 @@ p{
     
 }
 button a{
-    padding: 2px 30px;
-    font-style: none;
+    padding: 2px 120px;
+    text-decoration: none;
+    color: var(--blue);
+    
+    
+}
+.btn-basico a{
+    color: var(--cor-text-claro);
+
+}
+button a:hover{
+    padding: 2px 120px;
+    text-decoration: none;
+    color: var(--cor-text-preto);
+    
 }
 
-
-#card-free{
-    background-color: olive;
-}
 
 #card-basico{
-    background: linear-gradient(to bottom, #ffcc29 0, #ffcc29 13%, #ffffff 11%);
+    background: linear-gradient(to bottom, var(--yellow) 0, var(--yellow) 13%, var(--bg-card) 11%);
 
 }
 
@@ -174,9 +174,9 @@ button a{
     align-items: center;
 }
 #card-basico .header-basico span{
-    background-color: #1D539E;
+    background-color: var(--blue);
     border-radius: 40px;
-    color: #ffffff;
+    color: var(--cor-text-claro);
 
     padding: 7px 30px;
     margin-bottom: 15px;
@@ -197,6 +197,4 @@ button a{
     color: #ffffff;
 }
 
-#card-profissional{
-    background-color: slategray;
-}
+
